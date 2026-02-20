@@ -6,7 +6,7 @@ import streamlit as st
 sns.set(style='dark')
 
 # Load data
-main_data = pd.read_csv("main_data.csv")
+main_data = pd.read_csv("dashboard/main_data.csv")
 main_data['dteday'] = pd.to_datetime(main_data['dteday'])
 
 day_df  = main_data[main_data['source'] == 'day'].copy()
